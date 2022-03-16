@@ -57,5 +57,7 @@ update_params = {
     "quantity": "15"
 }
 
+#Update also works as post for this one
+
 update = requests.put(url=update_endpoint, json=update_params, headers=headers)
 print(update.text)
